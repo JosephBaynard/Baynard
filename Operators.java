@@ -61,5 +61,20 @@ class Operators {
         Boolean lookingForWork = true;
         Boolean canProgram = false;
         int currentSavings = 500;
+
+        if(!haveJob) {
+            if(lookingForWork && canProgram) {
+                System.out.println("Your chances as getting a job go up!");
+            }
+            else {
+                System.out.println("You might need to gain more skills before you can get a job.");
+            }
+            if(currentSavings < 500) {
+                System.out.println("You should be saving more money.");
+            }
+            else {
+                System.out.println("Do you need to save more money, still?");
+            }
+        } 
     }
-}   
+}           
