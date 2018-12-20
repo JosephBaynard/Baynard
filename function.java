@@ -1,25 +1,21 @@
-class GradClass {
-    static int CurrentYear = 2018;
+class function {
+    static int GradYear = 2021;
     static int Age = 16;
+    static int CurrentYear = 2018;
 
     public static void main(String args[]) {
-    int x = computeGradAge(CurrentYear, Age);
-
+    int x = computeGradAge(GradYear, Age);
     outPutGradAge(x);
     }
 
-    public static int computeGradAge (int gradYear, int Age){
-    int CalculatedGradYear;
-     CalculatedGradYear = (gradYear - CurrentYear) + Age;
+    public static int computeGradAge (int gradYear, int Age) {
+    
+     int CalculatedGradAge = (gradYear - CurrentYear) + Age;
 
-    return gradYear;
+    return CalculatedGradAge;
     }
 
-    public static void outPutGradAge (int gradYear) {
-        System.out.println("I will be 18" + gradYear + "when I Graduate");
+    public static void outPutGradAge (int gradAge) {
+        System.out.println("I will be " + gradAge + " when I Graduate");
     }
-}
-
-
-"function.java" 23 lines, 523 characters
-
+}                                                                               
