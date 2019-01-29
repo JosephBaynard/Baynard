@@ -1,13 +1,28 @@
 class DiceGame {
     public static void main(String args[]){
-    int x = GetD4();
-    int y = GetD6();
-    int z = GetD20();
-    System.out.println("Dice Aswner " + x);
-    System.out.println("Dice Aswner " + y);
+    int roll4 = GetD4();
+    int roll6 = GetD6();
+    int roll20 = GetD20();
+    System.out.println("Dice Aswner " + roll4);
+    System.out.println("Dice Aswner " + roll6);
+    System.out.println("Dice Aswner " + roll20);
+    
+    int n = 1;
+    while(n <= 10){
+        System.out.println(n);
+        n++;
+    }
+    System.out.println(n);
+    }
+    
 
-    System.out.println("Dice Aswner " + z);
-}
+
+
+    //for(int i = 0; i < rolls.length; i++) {
+        //System.out.println("Number of rolls for the value [" + i + "]: " + rolls[i]);
+    //}
+//}
+
     public static int GetD4(){
     return (int)(Math.random()*4)+1;
     }
